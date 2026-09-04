@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='robots' content='noindex'>
+<title>O&M Home-Ready Kits</title>
+<link rel='preconnect' href='https://fonts.googleapis.com'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Funnel+Sans:wght@300..800&display=swap'>
+<link rel='stylesheet' href='https://api.fontshare.com/v2/css?f[]=melodrama@300,400&display=swap'>
+</head>
+<body>
+<style>
+
+
+
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+
+.serif{font-family:'Melodrama';font-weight:300;}
+.sheet{page-break-after:always;}
+.sheet:last-child{page-break-after:auto;}
+.top{display:flex;justify-content:space-between;align-items:flex-start;
+     border-bottom:1pt solid #262221;padding-bottom:7pt;margin-bottom:11pt;}
+.top img{height:16pt;}
+.kicker{font-size:7.4pt;letter-spacing:.3em;text-transform:uppercase;color:#857C77;font-weight:600;padding-top:5pt;}
+h1{font-family:'Melodrama';font-weight:300;font-size:24pt;line-height:1.04;margin-bottom:7pt;}
+.lede{font-size:9.5pt;line-height:1.45;color:#5C5450;width:92%;margin-bottom:10pt;font-weight:350;}
+.why{background:#FFFFFF88;border-left:2.5pt solid #2B3D3D;padding:8pt 11pt;margin-bottom:11pt;font-size:8.7pt;line-height:1.42;}
+.why b{font-weight:700;}
+h2{font-family:'Melodrama';font-weight:400;font-size:12.5pt;margin:11pt 0 2pt;}
+h2:first-of-type{margin-top:0;}
+.when{font-size:6.9pt;letter-spacing:.22em;text-transform:uppercase;color:#857C77;font-weight:600;margin-bottom:6pt;}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:0 20pt;}
+ul{list-style:none;margin-bottom:4pt;}
+li{position:relative;padding-left:14pt;margin-bottom:3.8pt;font-size:8.6pt;line-height:1.36;break-inside:avoid;}
+li:before{content:'';position:absolute;left:0;top:2pt;width:7.6pt;height:7.6pt;border:1pt solid #857C77;border-radius:1pt;}
+li b{font-weight:650;}
+.note{font-size:8.1pt;color:#5C5450;line-height:1.4;margin-top:2pt;}
+.ours{background:#2B3D3D;color:#F2EFEA;padding:10pt 13pt;margin-top:11pt;break-inside:avoid;}
+.ours .h{font-family:'Melodrama';font-weight:400;font-size:11.5pt;margin-bottom:5pt;}
+.ours ul{margin:0;} .ours li{color:#D6D0C8;padding-left:12pt;margin-bottom:3pt;font-size:8.4pt;line-height:1.34;}
+.ours li:before{border:none;content:'·';color:#F9F8C5;font-size:13pt;top:-3pt;left:2pt;width:auto;height:auto;}
+.foot{border-top:1pt solid #D9D2C8;margin-top:10pt;padding-top:7pt;display:flex;justify-content:space-between;
+      font-size:7.6pt;letter-spacing:.2em;text-transform:uppercase;color:#857C77;font-weight:500;}
+.sign{font-family:'Melodrama';font-weight:300;font-size:10.2pt;color:#5C5450;margin-top:9pt;font-style:italic;}
+
+body{font-family:'Funnel Sans','Funnel',system-ui,sans-serif;color:#262221;background:#1B1917;margin:0;
+  font-size:8.9pt;line-height:1.4;-webkit-font-smoothing:antialiased;}
+.serif{font-family:'Melodrama',Georgia,serif;}
+.bar{position:sticky;top:0;z-index:20;background:#262221;display:flex;align-items:center;gap:12px;
+  padding:14px 22px;flex-wrap:wrap;border-bottom:1px solid #3A3530;}
+.bar .ttl{font-family:'Melodrama',Georgia,serif;color:#F2EFEA;font-size:19px;margin-right:8px;}
+.tab{background:transparent;color:#9A928A;font:500 13px/1 'Funnel Sans',sans-serif;border:1px solid #3A3530;
+  border-radius:2px;padding:9px 15px;cursor:pointer;letter-spacing:.05em;}
+.tab:hover{color:#F2EFEA;border-color:#6A625A;}
+.tab.on{background:#F2EFEA;color:#262221;border-color:#F2EFEA;font-weight:600;}
+.tab:focus-visible,.dl:focus-visible,.back:focus-visible{outline:2px solid #F9F8C5;outline-offset:2px;}
+.dl{display:none;background:#2B3D3D;color:#F2EFEA;font:600 13px/1 'Funnel Sans',sans-serif;
+  text-decoration:none;padding:10px 16px;border-radius:2px;letter-spacing:.05em;}
+.dl.on{display:inline-block;} .dl:hover{background:#35494a;}
+.back{margin-left:auto;color:#9A928A;font:500 12.5px/1 'Funnel Sans',sans-serif;text-decoration:none;
+  border:1px solid #3A3530;padding:9px 14px;border-radius:2px;letter-spacing:.05em;}
+.back:hover{color:#F2EFEA;border-color:#6A625A;}
+.stage{padding:26px 16px 60px;display:flex;justify-content:center;}
+.kit{display:none;background:#F2EFEA;width:210mm;min-height:297mm;padding:11mm 13mm 9mm;
+  box-shadow:0 18px 60px rgba(0,0,0,.5);}
+.kit.active{display:block;}
+.kit .sheet{page-break-after:auto;}
+@media (max-width:840px){ .kit{width:100%;min-height:0;padding:18px 16px;} .grid{grid-template-columns:1fr!important;} }
+@media print{
+  body{background:#fff;} .bar,.back{display:none!important;}
+  .stage{padding:0;} .kit{box-shadow:none;width:auto;min-height:0;padding:0;display:none;}
+  .kit.active{display:block;}
+  @page{size:A4;margin:11mm 13mm 9mm 13mm;}
+}
+</style>
+<div class='bar'>
+<span class='ttl'>Home-Ready Kits</span>
+<button class='tab' data-i='0'>For vendors</button><button class='tab' data-i='1'>For landlords</button><button class='tab' data-i='2'>For renters</button>
+<a class='dl' id='dl0' href='kits/OM_Home_Ready_Kit_Vendors.pdf' download>Download PDF</a><a class='dl' id='dl1' href='kits/OM_Home_Ready_Kit_Landlords.pdf' download>Download PDF</a><a class='dl' id='dl2' href='kits/OM_Home_Ready_Kit_Renters.pdf' download>Download PDF</a>
+<a class='back' href='guidelines.html' style='margin-left:auto;'>Guidelines</a><a class='back' href='index.html' style='margin-left:8px;'>Brand Strategy</a>
+</div>
+<div class='stage'><section class='kit' id='vendors' data-i='0'><div class='sheet'><div class='top'><img src='assets/om_linear_charcoal.png'><div class='kicker'>For vendors · Before your photographer arrives</div></div>
+<h1>Getting your home<br>ready for photography</h1>
+<div class='lede'>Your photographs are the first thing a buyer sees, and most of them will decide whether to inspect based on the images alone. An hour of preparation is worth more than any amount of editing afterwards.</div>
+<div class='why'><b>Why we ask, and what we will not do.</b> We photograph homes honestly. We do not add lawns, remove powerlines, alter views or change what a property actually is. That means the room has to be ready before the shutter opens, because we will not fix it later. It also means buyers arrive at your inspection expecting exactly what they saw.</div>
+<div class='grid'>
+<div>
+<h2>Inside</h2><div class='when'>The week before</div>
+<ul><li><b>Declutter benches and surfaces.</b> Kitchen benches clear apart from one considered item. Bathroom vanities empty.</li><li><b>Clear the fridge.</b> Magnets, photos, school notices, all of it.</li><li><b>Reduce, do not rearrange.</b> Fewer things in a room reads as more space.</li><li><b>Replace dead globes,</b> and match the colour temperature in each room. Mixed warm and cool light is the hardest thing to correct.</li><li><b>Put personal photographs away,</b> along with anything valuable or identifying.</li><li><b>Clean windows inside and out.</b> They show more than you would think.</li></ul>
+<h2>Outside</h2><div class='when'>The week before</div>
+<ul><li><b>Mow, edge and weed.</b> Book a week ahead so cut lines have settled.</li><li><b>Pressure-wash paths and the driveway</b> if they are marked.</li><li><b>Coil hoses, store tools, tidy the shed surrounds.</b></li><li><b>Pool cleaned and the cover off.</b></li><li><b>Set outdoor furniture</b> as you would for guests, with cushions on.</li></ul>
+</div>
+<div>
+<h2>The day before</h2><div class='when'>Do not leave these to the morning</div>
+<ul><li><b>Beds made with pressed linen.</b> Iron the top third if nothing else, that is what the camera sees.</li><li><b>Fresh towels, folded and matching,</b> in every bathroom.</li><li><b>Bins out of sight,</b> including the kitchen bin.</li><li><b>Cars off the driveway and away from the frontage.</b> Ask a neighbour if you need to.</li><li><b>Toys, pet bowls, beds and litter trays</b> put away.</li><li><b>Flowers or greenery</b> if you like them. One arrangement, not five.</li></ul>
+<h2>On the morning</h2><div class='when'>Twenty minutes, no more</div>
+<ul><li><b>Every blind and curtain open,</b> fully.</li><li><b>Every light on,</b> including rangehood and under-cabinet.</li><li><b>Toilet seats down, doors ajar</b> as we will style them.</li><li><b>Benches wiped, sink empty and dry.</b></li><li><b>Pets out of the house</b> if you can manage it.</li></ul>
+</div></div>
+<div class='ours'><div class='h'>What we take care of</div>
+<ul><li>Your agent will be there for the whole shoot. You do not need to direct the photographer.</li><li>Styling adjustments on the day, cushions, chairs, the small moves that make a frame work.</li><li>If we use virtual furniture or a day-to-dusk conversion, it is disclosed on the listing. Always.</li><li>If the weather ruins a hero shot, we reschedule it at our cost, not yours.</li></ul></div>
+<div class='sign'>Tell your agent the three things you love most about the home. Those get the extra frames.</div>
+<div class='foot'><span>O&amp;M Property</span><span>Home-Ready Kit</span><span>oandmproperty.com.au</span></div></div></section><section class='kit' id='landlords' data-i='1'><div class='sheet'><div class='top'><img src='assets/om_linear_charcoal.png'><div class='kicker'>For landlords · Before your photographer arrives</div></div>
+<h1>Getting your property<br>ready for leasing photography</h1>
+<div class='lede'>Good photographs lease a property faster and to better applicants. In a market with vacancy near one and a half per cent, days on market is the number that decides your return, and images are the fastest lever you have on it.</div>
+<div class='why'><b>Vacant or tenanted changes everything.</b> If the property is empty, the work below is yours and we can shoot any time. If someone is living there, they have rights to notice and to privacy, and we will work to their timing. A tenanted shoot is a shorter, more respectful shoot, and it will produce fewer frames. That is the correct trade.</div>
+<div class='grid'>
+<div>
+<h2>If the property is vacant</h2><div class='when'>Before the shoot</div>
+<ul><li><b>Have it professionally cleaned,</b> including windows and inside cupboards.</li><li><b>Carpets steamed</b> if there has been a recent vacate.</li><li><b>Every globe working.</b> Empty rooms are unforgiving about a dead light.</li><li><b>Gardens cut and edged,</b> even if nobody is living there.</li><li><b>Remove leftover items</b> from the previous tenancy, including anything in the garage.</li><li><b>Make sure power is connected.</b> A property without power cannot be photographed properly.</li></ul>
+<h2>Access</h2><div class='when'>Confirmed at booking</div>
+<ul><li><b>Leasing shoots run on the key safe.</b> Nobody from our team is on site to fix a problem.</li><li><b>That means preparation must be finished the day before,</b> not on the morning.</li><li><b>Confirm the code and any alarm details</b> when you confirm the booking.</li></ul>
+</div>
+<div>
+<h2>If the property is tenanted</h2><div class='when'>Notice and courtesy</div>
+<ul><li><b>We give the notice required by law,</b> in writing, and we do not shorten it.</li><li><b>We ask, we do not instruct.</b> Your tenant is not obliged to style the home for us.</li><li><b>Personal belongings stay,</b> unless the tenant chooses to move them.</li><li><b>We photograph the property, not their life.</b> No personal photographs, documents, medication or valuables in frame.</li><li><b>We will work around them,</b> including rescheduling if the timing is difficult.</li></ul>
+<div class='note'>We send tenants their own short version of this document, written to ask rather than instruct. How renters are treated is a large part of why landlords stay with us.</div>
+<h2>Worth considering</h2><div class='when'>Optional, and we will advise</div>
+<ul><li><b>Virtual furniture</b> for a vacant property. Disclosed on the listing, always.</li><li><b>Reshooting after a refresh.</b> New paint or new carpet is worth new images.</li><li><b>Keeping the images.</b> You receive full-resolution originals, so they can be reused at the next vacancy.</li></ul>
+</div></div>
+<div class='ours'><div class='h'>What we take care of</div>
+<ul><li>Booking, access, notice to tenants, and all coordination with the photographer.</li><li>A written standard the photographer works to, so quality does not depend on who turns up.</li><li>Turnaround within 48 hours of the shoot.</li><li>If the delivered set misses our standard, we reshoot at no cost to you.</li></ul></div>
+<div class='sign'>Any question about what is worth doing before a shoot, ask us. We would rather advise than reshoot.</div>
+<div class='foot'><span>O&amp;M Property</span><span>Home-Ready Kit</span><span>oandmproperty.com.au</span></div></div></section><section class='kit' id='renters' data-i='2'><div class='sheet'><div class='top'><img src='assets/om_linear_charcoal.png'><div class='kicker'>For renters · A photographer is coming</div></div>
+<h1>We are photographing<br>your home, with your help</h1>
+<div class='lede'>Your home is being photographed for a rental listing. We know this is an intrusion you did not ask for, so we want to be clear about what happens, what we will not do, and what is entirely your choice.</div>
+<div class='why'><b>What is not negotiable, on our side.</b> You receive proper written notice. We photograph the property, not your belongings or your life. Nothing personal appears in a published image. If the timing does not work for you, tell us and we will move it.</div>
+<div class='grid'>
+<div>
+<h2>What we will never photograph</h2><div class='when'>No exceptions</div>
+<ul><li><b>Personal photographs</b> or anything with a face in it.</li><li><b>Documents, mail, screens</b> or anything with your name on it.</li><li><b>Medication, medical equipment</b> or anything relating to health.</li><li><b>Children's rooms in identifying detail,</b> including name signs and school items.</li><li><b>Valuables,</b> or anything that shows what is worth taking.</li><li><b>Wardrobes, drawers and cupboards.</b> We do not open storage.</li></ul>
+<h2>Entirely your choice</h2><div class='when'>No pressure either way</div>
+<ul><li><b>Putting things away</b> before we arrive. Helpful, never expected.</li><li><b>Being home during the shoot.</b> You are welcome to be, and welcome not to be.</li><li><b>Asking us to skip a room.</b> Tell the photographer and it will not be shot.</li><li><b>Asking to see the images</b> before they are published.</li></ul>
+</div>
+<div>
+<h2>If you would like to help</h2><div class='when'>Genuinely optional</div>
+<ul><li>Open the blinds and curtains.</li><li>Switch the lights on, including the rangehood.</li><li>Clear the kitchen bench and the bathroom vanity if it is easy.</li><li>Move the bin out of the kitchen.</li><li>Put pet bowls and toys aside.</li></ul>
+<div class='note'>None of this affects your tenancy, your rent, or how we deal with you. It is a courtesy, and we are grateful for it, but a home that looks lived in is a home, and that is fine.</div>
+<h2>Practical detail</h2><div class='when'>What to expect</div>
+<ul><li><b>Around 45 minutes to an hour</b> in the property.</li><li><b>One photographer,</b> occasionally with an assistant.</li><li><b>They will not move your things</b> without asking you first.</li><li><b>The key safe is used</b> only if you have agreed to it and are not home.</li></ul>
+</div></div>
+<div class='ours'><div class='h'>Anything you are not comfortable with</div>
+<ul><li>Tell us before the shoot and we will change the plan.</li><li>Tell the photographer on the day and they will stop.</li><li>Tell us afterwards and we will remove the image.</li><li>None of these conversations are difficult ones to have with us.</li></ul></div>
+<div class='sign'>Thank you. Being accommodating about this is genuinely appreciated, and we do not take it for granted.</div>
+<div class='foot'><span>O&amp;M Property</span><span>Home-Ready Kit</span><span>oandmproperty.com.au</span></div></div></section></div>
+<script>
+const tabs=[...document.querySelectorAll('.tab')], kits=[...document.querySelectorAll('.kit')],
+      dls=[...document.querySelectorAll('.dl')];
+function show(i,setHash){
+  kits.forEach((k,j)=>k.classList.toggle('active',j===i));
+  tabs.forEach((t,j)=>t.classList.toggle('on',j===i));
+  dls.forEach((d,j)=>d.classList.toggle('on',j===i));
+  if(setHash) history.replaceState(null,'','#'+kits[i].id);
+}
+tabs.forEach(t=>t.onclick=()=>show(+t.dataset.i,true));
+const h=location.hash.slice(1);
+const idx=kits.findIndex(k=>k.id===h);
+show(idx>=0?idx:0,false);
+</script>
+</body>
+</html>
