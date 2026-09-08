@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='robots' content='noindex'>
+<title>O&M Collateral Design Brief</title>
+<link rel='preconnect' href='https://fonts.googleapis.com'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Funnel+Sans:wght@300..800&display=swap'>
+<link rel='stylesheet' href='https://api.fontshare.com/v2/css?f[]=melodrama@300,400&display=swap'>
+</head>
+<body>
+<style>
+
+
+
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+
+.serif{font-family:'Melodrama';font-weight:300;}
+h1{font-family:'Melodrama';font-weight:300;font-size:24pt;line-height:1.02;margin-bottom:6pt;}
+h2{font-family:'Melodrama';font-weight:400;font-size:13pt;margin:12pt 0 3pt;padding-top:6pt;
+   border-top:1pt solid #262221;page-break-after:avoid;}
+h2:first-of-type{margin-top:0;}
+h3{font-size:8.8pt;font-weight:700;margin:8pt 0 2pt;page-break-after:avoid;}
+.kick{font-size:7.2pt;letter-spacing:.3em;text-transform:uppercase;color:#857C77;font-weight:600;margin-bottom:3pt;}
+.lede{font-size:8.8pt;line-height:1.42;color:#5C5450;width:94%;margin-bottom:8pt;font-weight:350;}
+p{margin-bottom:4pt;}
+.top{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:1pt solid #262221;
+     padding-bottom:6pt;margin-bottom:9pt;}
+.top img{height:20pt;}
+.meta{font-size:7.6pt;letter-spacing:.16em;text-transform:uppercase;color:#857C77;font-weight:600;text-align:right;line-height:1.7;}
+table{width:100%;border-collapse:collapse;margin:4pt 0 6pt;font-size:7.5pt;page-break-inside:avoid;}
+th{text-align:left;font-size:6.8pt;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:#857C77;
+   border-bottom:.8pt solid #262221;padding:0 7pt 4pt 0;}
+td{border-bottom:.5pt solid #D9D2C8;padding:3.6pt 6pt 3.6pt 0;vertical-align:top;line-height:1.33;}
+td:first-child{font-weight:650;width:98pt;}
+ul{list-style:none;margin-bottom:6pt;}
+li{position:relative;padding-left:10pt;margin-bottom:2.6pt;line-height:1.34;}
+li:before{content:'';position:absolute;left:0;top:5pt;width:3.5pt;height:3.5pt;background:#857C77;border-radius:50%;}
+li b{font-weight:650;}
+.box{background:#FFFFFF88;border-left:2.5pt solid #2B3D3D;padding:7pt 10pt;margin:7pt 0;font-size:7.9pt;line-height:1.38;}
+.warn{border-left-color:#513F3D;background:#51403D0D;}
+.pri{background:#2B3D3D;color:#F2EFEA;padding:9pt 12pt;margin:7pt 0;break-inside:avoid;}
+.pri .h{font-family:'Melodrama';font-weight:400;font-size:10.5pt;margin-bottom:4pt;}
+.pri li{color:#D6D0C8;} .pri li:before{background:#F9F8C5;}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:0 20pt;}
+.foot{border-top:.8pt solid #D9D2C8;margin-top:9pt;padding-top:5pt;display:flex;justify-content:space-between;
+      font-size:7pt;letter-spacing:.18em;text-transform:uppercase;color:#857C77;font-weight:500;}
+.sheet{page-break-after:always;} .sheet:last-child{page-break-after:auto;}
+
+body{font-family:'Funnel Sans','Funnel',system-ui,sans-serif;color:#262221;background:#1B1917;margin:0;
+  font-size:8.1pt;line-height:1.38;-webkit-font-smoothing:antialiased;}
+.serif,h1,h2{font-family:'Melodrama',Georgia,serif;}
+.bar{position:sticky;top:0;z-index:20;background:#262221;display:flex;align-items:center;gap:10px;
+  padding:13px 20px;flex-wrap:wrap;border-bottom:1px solid #3A3530;}
+.bar .ttl{font-family:'Melodrama',Georgia,serif;color:#F2EFEA;font-size:18px;margin-right:6px;}
+.tab{background:transparent;color:#9A928A;font:500 12.5px/1 'Funnel Sans',sans-serif;border:1px solid #3A3530;
+  border-radius:2px;padding:8px 13px;cursor:pointer;letter-spacing:.04em;}
+.tab:hover{color:#F2EFEA;border-color:#6A625A;}
+.tab:focus-visible,.dl:focus-visible,.back:focus-visible{outline:2px solid #F9F8C5;outline-offset:2px;}
+.dl{background:#2B3D3D;color:#F2EFEA;font:600 12.5px/1 'Funnel Sans',sans-serif;text-decoration:none;
+  padding:9px 15px;border-radius:2px;letter-spacing:.04em;}
+.dl:hover{background:#35494a;}
+.back{margin-left:auto;color:#9A928A;font:500 12px/1 'Funnel Sans',sans-serif;text-decoration:none;
+  border:1px solid #3A3530;padding:8px 13px;border-radius:2px;letter-spacing:.04em;}
+.back:hover{color:#F2EFEA;border-color:#6A625A;}
+.stage{padding:24px 16px 70px;display:flex;flex-direction:column;align-items:center;gap:22px;}
+.sheet{background:#F2EFEA;width:210mm;min-height:297mm;padding:10mm 11mm 8mm;
+  box-shadow:0 16px 54px rgba(0,0,0,.5);scroll-margin-top:78px;}
+@media (max-width:860px){ .sheet{width:100%;min-height:0;padding:20px 16px;} .two{grid-template-columns:1fr!important;} }
+@media print{
+  body{background:#fff;} .bar{display:none!important;} .stage{padding:0;gap:0;}
+  .sheet{box-shadow:none;width:auto;min-height:0;padding:0;page-break-after:always;}
+  .sheet:last-child{page-break-after:auto;}
+  @page{size:A4;margin:10mm 11mm 8mm;}
+}
+</style>
+<div class='bar'>
+<span class='ttl'>Collateral Design Brief</span>
+<button class='tab' data-i='0'>Overview</button><button class='tab' data-i='1'>Brochures</button><button class='tab' data-i='2'>Boards &amp; stickers</button><button class='tab' data-i='3'>Cards &amp; banners</button><button class='tab' data-i='4'>Appraisal &amp; handover</button>
+<a class='dl' href='collateral/OM_Collateral_Brief_Uswa.pdf' download>Download PDF</a>
+<a class='back' href='guidelines.html'>Guidelines</a><a class='back' href='kits.html' style='margin-left:8px;'>Kits</a><a class='back' href='index.html' style='margin-left:8px;'>Brand Strategy</a>
+</div>
+<div class='stage'><section class='sheet' id='s0'><div class='top'><img src='file:///private/tmp/claude-501/-Users-antimonystudio/b6773ea0-0e61-4d07-b2a6-425fc0d23c73/scratchpad/logo/OM-Property-Lockup-Charcoal-transparent.png'>
+<div class='meta'>Collateral Design Brief<br>Round Four · September 2026</div></div>
+<div class='kick'>For Uswa · Brochures first</div>
+<h1>O&amp;M Property<br>collateral toolkit</h1>
+<div class='lede'>Thirteen items to design and specify, modelled on the RT Edgar toolkit: every piece gets a trim size, bleed, safe zone, material, colourway and file setup, so anything can go to a printer without a follow-up conversation.</div>
+<div class='pri'><div class='h'>Priority and sequence</div>
+<ul><li><b>1. Brochures.</b> Start here. They set the grid, the type scale and the image crops every other printed piece inherits.</li><li><b>2. Boards and stickers.</b> Longest print lead time, and the most-seen asset. Sold and under-offer stickers are designed with the board, not after it.</li><li><b>3. Business cards and window cards.</b> Business cards are already specified from Round Three: matte, embossed, QR.</li><li><b>4. Banners, flags and office signage.</b> Large format, lowest resolution demand, highest distance-legibility demand.</li><li><b>5. Appraisal packs.</b> Last, because they assemble everything above.</li></ul></div>
+<div class='box warn'><b>One thing to confirm before you start on boards.</b> This brief lists boards at 8&times;10. The 20 August session recorded the opposite decision: <i>"Board sizes are set to remain at 8&times;6, with 8&times;10 sizes being discarded,"</i> with leasing at 4&times;6. Either the decision changed since, or the two got crossed. Boards are the single most expensive item to get wrong, so please confirm with Sam before drawing anything at 8&times;10. Everything below is specified at both sizes so neither answer wastes work.</div>
+<h2>The system, in short</h2>
+<div class='two'><div>
+<h3>Type</h3>
+<ul><li><b>Melodrama Light</b> for headlines, addresses and display. Never below 24pt in print.</li><li><b>Funnel Sans</b> for body, labels, contact detail and all small type.</li><li>Headline type set tight, body type set generously. The contrast between them is the system.</li></ul>
+<h3>Colour</h3>
+<ul><li><b>Sales leads brown and green.</b> The safe, elegant pairing agreed 3 September.</li><li><b>Emerald</b> general · <b>butter yellow</b> lease · <b>chocolate</b> off-market. Service-line coding, applied consistently.</li><li><b>Lilac-pink</b> is an accent, not a ground. Use it sparingly and never on a board.</li><li>Ivory and charcoal carry everything else.</li></ul>
+</div><div>
+<h3>Logo</h3>
+<ul><li><b>Primary lockup</b> for first appearance on any surface.</li><li><b>Linear monogram</b> for second and subsequent pages, and repeating devices.</li><li><b>Box monogram</b> for stamps, stickers, watermarks and tight square formats.</li><li>Clear space and minimum sizes as per the identity guidelines. On print, the box monogram never below 15mm.</li></ul>
+<h3>Property icons</h3>
+<ul><li>Beds, baths, cars. Bottom of every board and brochure cover.</li><li>One scaled, standardised set. Draw once, reuse everywhere.</li><li>Numerals in Funnel Sans, tabular figures, aligned to the icon baseline.</li></ul>
+</div></div>
+<div class='foot'><span>O&amp;M Property &times; Antimony</span><span>For Uswa</span><span>01</span></div></section><section class='sheet' id='s1'><div class='top'><img src='file:///private/tmp/claude-501/-Users-antimonystudio/b6773ea0-0e61-4d07-b2a6-425fc0d23c73/scratchpad/logo/OM-Property-Lockup-Charcoal-transparent.png'>
+<div class='meta'>Collateral Design Brief<br>01 · Brochures — priority</div></div>
+<div class='kick'>Priority item</div>
+<h1>Brochures</h1>
+<div class='lede'>The brochure is the piece a buyer carries home from an inspection and puts on the kitchen bench. It is the only collateral that gets read rather than glanced at, so it carries the most typography and the highest print standard.</div>
+<h2>Formats to design</h2>
+<table><tr><td>A4 portrait, 4pp</td><td>Standard listing. Cover, two interior spreads, back with agent detail and floorplan. <b>Trim 210 &times; 297mm.</b></td></tr><tr><td>A4 landscape, 4pp</td><td>Lifestyle and acreage, where wide crops and land context need the horizontal. <b>Trim 297 &times; 210mm.</b></td></tr><tr><td>DL, 2pp</td><td>Open-home handout and letterbox drop. <b>Trim 99 &times; 210mm.</b> Single fold from A4 is acceptable if it keeps unit cost down.</td></tr><tr><td>A5 portrait, 2pp</td><td>Leasing. Lighter spec, butter yellow service coding, no floorplan required.</td></tr></table>
+<h2>Print specification</h2>
+<table><tr><td>Bleed</td><td>3mm all edges. Crop marks on, registration off.</td></tr><tr><td>Safe zone</td><td>10mm from trim on all edges. No type, no logo, no icon inside that margin.</td></tr><tr><td>Resolution</td><td>300dpi at final size. Photography placed at 100%, never scaled up in layout.</td></tr><tr><td>Colour</td><td>CMYK for the printer. Supply Adobe RGB masters separately for anything that may also go digital.</td></tr><tr><td>Stock</td><td>Uncoated, 150 to 170gsm text. Heavier for the 4pp cover if the printer allows. Matte throughout, no gloss anywhere in this brand.</td></tr><tr><td>Finish</td><td>Trimmed flat or single fold. No lamination on the standard brochure.</td></tr><tr><td>Supply</td><td>Print-ready PDF/X-4, fonts embedded, one file per format.</td></tr></table>
+<h2>Layout direction</h2>
+<div class='two'><div>
+<ul><li><b>Full-bleed hero on the cover.</b> One image, edge to edge, with the address and lifestyle heading over a scrim if the placement zone runs bright.</li><li><b>Property icons along the bottom</b> of the cover, in the standardised set.</li><li><b>Interior spreads run a generous grid.</b> Three to five images per spread maximum. White space is the premium signal, not more photographs.</li><li><b>The floorplan gets its own panel</b> and is never squeezed into a corner.</li></ul>
+</div><div>
+<ul><li><b>Body copy in the brand voice.</b> Sentences under 20 words. No <i>nestled</i>, no <i>boasts</i>, no exclamation marks.</li><li><b>Agent detail is small and confident.</b> Name, mobile, email. No headshot on the standard brochure.</li><li><b>Back cover carries the linear monogram</b> and the office detail, nothing else.</li><li><b>Colourway follows the service line.</b> Brown and green for sales, butter yellow for lease.</li></ul>
+</div></div>
+<div class='box'><b>Build it as a template, not a one-off.</b> Every brochure after the first will be produced by someone else. Set paragraph and character styles, name the layers, lock the grid, and leave the image frames empty with fitting rules applied. The measure of success is whether a non-designer can drop in eight photographs and get a correct brochure.</div>
+<div class='foot'><span>O&amp;M Property &times; Antimony</span><span>For Uswa</span><span>02</span></div></section><section class='sheet' id='s2'><div class='top'><img src='file:///private/tmp/claude-501/-Users-antimonystudio/b6773ea0-0e61-4d07-b2a6-425fc0d23c73/scratchpad/logo/OM-Property-Lockup-Charcoal-transparent.png'>
+<div class='meta'>Collateral Design Brief<br>02 · Boards, pointers and stickers</div></div>
+<h1>Boards and stickers</h1>
+<div class='lede'>The highest-frequency brand impression O&amp;M owns. A board is read at 60km/h from 20 metres, so hierarchy and contrast matter more than detail. Design for the car, then check it on screen.</div>
+<h2>Signboards</h2>
+<table><tr><td>Sizes</td><td>Specify both until confirmed: <b>2400 &times; 1800mm (8&times;6)</b> and <b>2400 &times; 3000mm (8&times;10)</b>. Leasing at <b>1200 &times; 1800mm (4&times;6)</b>, standard stock.</td></tr><tr><td>Material</td><td>ACM for photo boards and anything on display beyond a short campaign. Corflute 5mm acceptable for leasing and stock boards. ACM presents materially better and stops the brand looking temporary.</td></tr><tr><td>Bleed</td><td>10mm all edges for large format. Confirm with the fabricator before final artwork.</td></tr><tr><td>Safe zone</td><td>50mm minimum. More on any edge that will be framed or post-mounted.</td></tr><tr><td>Resolution</td><td>At least 100dpi at final size for boards viewed from distance. Never upscale photography to reach it.</td></tr><tr><td>Layouts</td><td>Three: full-bleed hero, copy-left with image-right, and a text-only stock board. Portrait variants of each.</td></tr><tr><td>Icons</td><td>Beds, baths, cars along the bottom, standardised scale across every size.</td></tr><tr><td>Colour</td><td>Brown and green lead. Test emerald, yellow and lilac-pink at the factory before any of them go to a live board.</td></tr></table>
+<div class='box warn'><b>Do not sign off a palette on screen.</b> Emerald, butter yellow and lilac-pink behave very differently on corflute in daylight than on a monitor. The differentiation argument against O'Brien rests entirely on how these read at distance, so the factory test print is the real approval gate.</div>
+<h2>Open-home pointer boards</h2>
+<table><tr><td>Size</td><td>600 &times; 450mm or 600 &times; 900mm on a spike or A-frame. Confirm the existing frames before setting the trim.</td></tr><tr><td>Design</td><td>One word, one arrow, one mark. <b>OPEN</b> or <b>OPEN HOME</b> in Funnel Sans, tight tracking, plus a directional arrow and the box monogram.</td></tr><tr><td>Rule</td><td>Nothing else on it. No address, no agent, no phone number. It has one job at one glance.</td></tr><tr><td>Material</td><td>Corflute 5mm, double-sided, mirrored arrow on the reverse so one board works in both directions.</td></tr></table>
+<h2>Status stickers</h2>
+<table><tr><td>Set</td><td><b>SOLD</b> · <b>UNDER OFFER</b> · <b>LEASED</b> · <b>FOR LEASE</b></td></tr><tr><td>Sizes</td><td>Two per status, scaled to the 8&times;6 and 8&times;10 boards. Provide a 4&times;6 leasing size as well.</td></tr><tr><td>Design</td><td>Solid colour band, Funnel Sans in ivory, tight tracking, generous letter spacing. Angled application is not part of this brand: they sit square, aligned to the board grid.</td></tr><tr><td>Colour</td><td><b>SOLD</b> emerald. <b>UNDER OFFER</b> chocolate. <b>LEASED</b> and <b>FOR LEASE</b> butter yellow with charcoal type.</td></tr><tr><td>Material</td><td>Weatherproof vinyl, matte laminate, permanent adhesive. Matte matters: gloss stickers flare in photographs of the board.</td></tr><tr><td>Setup</td><td>Supply as die-cut artwork with a cut line on a separate spot-colour layer named CutContour.</td></tr></table>
+<div class='foot'><span>O&amp;M Property &times; Antimony</span><span>For Uswa</span><span>03</span></div></section><section class='sheet' id='s3'><div class='top'><img src='file:///private/tmp/claude-501/-Users-antimonystudio/b6773ea0-0e61-4d07-b2a6-425fc0d23c73/scratchpad/logo/OM-Property-Lockup-Charcoal-transparent.png'>
+<div class='meta'>Collateral Design Brief<br>03 · Cards, banners and signage</div></div>
+<h1>Cards, banners<br>and signage</h1>
+<h2>Business cards</h2>
+<table><tr><td>Trim</td><td>90 &times; 55mm, Australian standard. 3mm bleed, 4mm safe zone.</td></tr><tr><td>Stock</td><td>Heavy uncoated, 450 to 600gsm, or duplexed. Matte finish, confirmed Round Three.</td></tr><tr><td>Finish</td><td><b>Embossed</b> O&amp;M Property text, confirmed Round Three. Consider a matching blind deboss on the reverse.</td></tr><tr><td>Front</td><td>Primary lockup, generous clear space, nothing else.</td></tr><tr><td>Back</td><td>Name, role, mobile, email, and the QR code to the digital profile. Design the QR into the layout, not dropped in a corner.</td></tr><tr><td>QR</td><td>Minimum 15mm square, charcoal on ivory, quiet zone respected. Test-scan the printed proof, not the file.</td></tr><tr><td>Supply</td><td>Print-ready PDF with the emboss and deboss areas on separate named spot layers.</td></tr></table>
+<h2>Window cards</h2>
+<table><tr><td>Size</td><td>A4 portrait or A3 portrait. Confirm the existing display hardware first, since the frame dictates the trim.</td></tr><tr><td>Design</td><td>Hero image top, address and icons beneath, price or price guide, agent detail at the base. Same grid as the brochure cover.</td></tr><tr><td>Stock</td><td>200 to 250gsm uncoated, matte. Printed in-house on demand, so design to an office printer, not a commercial press.</td></tr><tr><td>Setup</td><td>Build as an editable template with locked layout and open text fields. This one gets updated weekly by someone who is not a designer.</td></tr></table>
+<h2>Pull-up banners</h2>
+<table><tr><td>Finished size</td><td>850 &times; 2000mm, the Australian standard cassette.</td></tr><tr><td>Artwork size</td><td>850 &times; 2090mm, with 20mm bleed top and 50mm bottom.</td></tr><tr><td>Dead zone</td><td>The bottom 100 to 150mm rolls into the cassette. No logo, type or icon below that line.</td></tr><tr><td>Resolution</td><td>150dpi at final size, CMYK, print-ready PDF.</td></tr><tr><td>Design</td><td>Vertical composition. Lockup in the upper third at eye height, message in the middle, contact at the base above the dead zone.</td></tr></table>
+<h2>Teardrop flags</h2>
+<table><tr><td>Sizes</td><td>Small 2100mm, medium 3000mm, large 4200mm overall height. Medium is the sensible default for open homes.</td></tr><tr><td>Printable area</td><td>Small approximately 924 &times; 1425mm. Large approximately 1062 &times; 2664mm. Confirm the template with the supplier before artwork.</td></tr><tr><td>Bleed and safety</td><td>5mm each. Artwork at 300dpi, CMYK.</td></tr><tr><td>Design</td><td>The mark and one word. Flags move constantly, so anything detailed is wasted. Double-sided, with the reverse mirrored.</td></tr></table>
+<h2>Office signage</h2>
+<table><tr><td>Scope</td><td>Fascia, window graphics, reception wall, and the boardroom mark.</td></tr><tr><td>Note</td><td>The current office signage is being removed. Reusing those materials in the new boardroom was raised as an option, so measure before designing.</td></tr><tr><td>Design</td><td>Fascia carries the primary lockup. Reception wall carries the linear monogram at scale. Window graphics use frosted vinyl, not printed colour.</td></tr><tr><td>Sequence</td><td>Design-ahead only. The fit-out is next year, so this is not launch-critical.</td></tr></table>
+<div class='foot'><span>O&amp;M Property &times; Antimony</span><span>For Uswa</span><span>04</span></div></section><section class='sheet' id='s4'><div class='top'><img src='file:///private/tmp/claude-501/-Users-antimonystudio/b6773ea0-0e61-4d07-b2a6-425fc0d23c73/scratchpad/logo/OM-Property-Lockup-Charcoal-transparent.png'>
+<div class='meta'>Collateral Design Brief<br>04 · Appraisal packs and handover</div></div>
+<h1>Appraisal packs<br>and file handover</h1>
+<h2>Appraisal packs</h2>
+<div class='lede'>The pack is handed over at the moment a vendor decides whether to trust O&amp;M. It should feel like the most expensive thing in the room, and it is the one item where spending more is the right answer.</div>
+<table><tr><td>Format</td><td>Presentation folder plus inserts. A4 portrait inserts, printed single-sided.</td></tr><tr><td>Folder</td><td>Uncoated heavy board, matte, with the primary lockup blind-debossed rather than printed. Interior pocket, business card slot.</td></tr><tr><td>Inserts</td><td>Cover letter, market appraisal, comparable sales, the marketing plan, the fee schedule, and the team page. Each a standalone A4 so the pack can be assembled per vendor.</td></tr><tr><td>Print spec</td><td>3mm bleed, 10mm safe zone, 300dpi, CMYK, 150 to 170gsm uncoated inserts.</td></tr><tr><td>Design</td><td>Same grid as the brochure. Melodrama for section heads, Funnel Sans for everything else. Numbers set in tabular figures so columns align.</td></tr><tr><td>Voice</td><td>Brand voice throughout. Proof beside every claim: a street, a number, a date.</td></tr></table>
+<h2>File setup and handover standards</h2>
+<div class='lede'>Everything here will be edited by someone else, most of it by a non-designer. The build quality matters as much as the design.</div>
+<ul><li><b>One master file per item</b>, with every size as a separate artboard or page. Not one file per size.</li><li><b>Paragraph and character styles for all type.</b> No local overrides anywhere.</li><li><b>Named colour swatches</b> mapped to the palette. No unnamed or one-off colours.</li><li><b>Layers named and locked</b>: Background, Imagery, Type, Logo, Icons, Print marks.</li><li><b>Image frames empty</b> with fitting rules applied, so photography drops in without re-cropping.</li><li><b>Linked assets, never embedded</b>, with a single collected links folder per item.</li><li><b>A print-ready PDF export preset saved into the file</b>, so exports are consistent whoever makes them.</li><li><b>One specification page inside each master file</b>, restating trim, bleed, safe zone, stock and finish.</li></ul>
+<div class='pri'><div class='h'>What to send back, per item</div>
+<ul><li>Editable master file, packaged with links and fonts.</li><li>Print-ready PDF at final trim, one per size and colourway.</li><li>A flat JPEG or PNG preview for internal review and client approval.</li><li>The specification page, so the printer conversation is one email rather than three.</li></ul></div>
+<div class='box'><b>Order of operations.</b> Brochures first, because their grid and type scale become the reference for boards, window cards and the appraisal pack. Do not start boards until the brochure grid is signed off, and do not start the appraisal pack until both are settled.</div>
+<div class='foot'><span>O&amp;M Property &times; Antimony</span><span>For Uswa</span><span>05</span></div></section></div>
+<script>
+const tabs=[...document.querySelectorAll('.tab')], sheets=[...document.querySelectorAll('.sheet')];
+tabs.forEach(t=>t.onclick=()=>sheets[+t.dataset.i].scrollIntoView({behavior:'smooth',block:'start'}));
+const io=new IntersectionObserver(es=>{
+  es.forEach(e=>{ if(e.isIntersecting){
+    const i=sheets.indexOf(e.target);
+    tabs.forEach((t,j)=>t.classList.toggle('on',j===i));
+  }});
+},{rootMargin:'-40% 0px -55% 0px'});
+sheets.forEach(s=>io.observe(s));
+</script>
+<style>.tab.on{background:#F2EFEA;color:#262221;border-color:#F2EFEA;font-weight:600;}</style>
+</body>
+</html>
